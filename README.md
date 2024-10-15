@@ -28,7 +28,24 @@ This project is a **real-time network traffic analysis tool** built using Python
 
 ### Prerequisites
 
-- Python 3.x
-- Install required Python packages:
-  ```bash
-  pip install pyshark pandas flask flask-cors nest_asyncio
+1. **Python 3.x**: Ensure that Python is installed.
+2. **Wireshark**: PyShark requires Wireshark’s **tshark** utility for packet capture.
+
+   - **Install Wireshark**:
+     - **Windows**: Download and install Wireshark from [Wireshark Official Site](https://www.wireshark.org/download.html). Make sure to select "Install `tshark`" during installation.
+     - **Linux**:
+       ```bash
+       sudo apt-get update
+       sudo apt-get install wireshark
+       sudo usermod -aG wireshark $(whoami)
+       ```
+       - You may need to log out and back in to apply the changes.
+
+     - **macOS** (with Homebrew):
+       ```bash
+       brew install wireshark
+       ```
+
+3. **Python Libraries**: Install required Python packages:
+   ```bash
+   pip install pyshark pandas flask flask-cors nest_asyncio
