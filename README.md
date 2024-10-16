@@ -77,5 +77,6 @@ pip install pyshark pandas flask flask-cors nest_asyncio
 ```bash
 python app.py
 ```
+## Screenshot
 ![image](https://github.com/divyanshhanma/Network_traffic_Visualization/blob/main/Screenshot%202024-10-16%20094644.png)
 
